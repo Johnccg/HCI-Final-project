@@ -1,101 +1,51 @@
-a,
-button,
-input,
-select,
-h1,
-h2,
-h3,
-h4,
-h5,
 * {
-    box-sizing: border-box;
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-weight: 400;
+}
+
+body {
     margin: 0;
     padding: 0;
-    border: none;
-    text-decoration: none;
-    background: none;
-
-    -webkit-font-smoothing: antialiased;
-}
-
-menu,
-ol,
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.home-hi-fi,
-.home-hi-fi * {
-    box-sizing: border-box;
-}
-
-.home-hi-fi {
     background: #ffffff;
     display: flex;
     flex-direction: column;
     gap: 0px;
     align-items: center;
     justify-content: flex-start;
-    height: 675px;
-    position: relative;
-    overflow: hidden;
 }
 
-.topbar-hi-fi {
+.topbar {
     background: #b8b8b8;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-shrink: 0;
-    width: 1200px;
+    align-self: stretch;
     height: 55px;
-    position: relative;
-    overflow: hidden;
 }
 
 .next-level-adventure {
-    color: #000000;
-    text-align: left;
     font-family: "Inter-ExtraBold", sans-serif;
     font-size: 20px;
     font-weight: 800;
-    position: relative;
 }
 
-.frame-16 {
-    padding: 0px 30px 0px 30px;
+nav {
+    padding: 0px 30px;
     display: flex;
     flex-direction: row;
     gap: 40px;
     align-items: center;
     justify-content: center;
     align-self: stretch;
-    flex-shrink: 0;
-    width: 235px;
-    position: relative;
-    overflow: hidden;
 }
 
-.explore {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
+nav > a {
+    text-decoration: none;
     font-size: 20px;
-    font-weight: 400;
-    position: relative;
-}
-
-.create {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    position: relative;
 }
 
 .profile {
@@ -104,36 +54,20 @@ ul {
     flex-shrink: 0;
     width: 45px;
     height: 45px;
-    position: relative;
+
     object-fit: cover;
 }
 
-.body {
+.trip-recomendation {
     background: #ffffff;
-    padding: 0px 100px 0px 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-}
-
-.home-body-hi-fi {
-    background: #ffffff;
-    padding: 13px 50px 13px 50px;
+    padding: 13px 100px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-    flex-shrink: 0;
-    width: 1000px;
-    position: relative;
-    overflow: hidden;
+    align-self: stretch;
+    flex: 1;
 }
 
 .search-bar {
@@ -147,7 +81,7 @@ ul {
     justify-content: flex-start;
     flex-shrink: 0;
     width: 900px;
-    position: relative;
+
     overflow: hidden;
 }
 
@@ -155,17 +89,17 @@ ul {
     flex-shrink: 0;
     width: 20px;
     height: 20px;
-    position: relative;
+
     overflow: visible;
 }
 
 .search-for-a-trip {
     color: #7a7a7a;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
+
+
     font-size: 12px;
-    font-weight: 400;
-    position: relative;
+
+
 }
 
 .home-section-hi-fi {
@@ -176,17 +110,17 @@ ul {
     justify-content: flex-start;
     align-self: stretch;
     flex-shrink: 0;
-    position: relative;
+
     overflow: hidden;
 }
 
 .title {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
+
+
+
     font-size: 28px;
-    font-weight: 400;
-    position: relative;
+
+
     width: 900px;
 }
 
@@ -197,7 +131,7 @@ ul {
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-    position: relative;
+
     overflow: hidden;
 }
 
@@ -215,7 +149,7 @@ ul {
     flex-shrink: 0;
     width: 250px;
     height: 300px;
-    position: relative;
+
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
@@ -225,7 +159,7 @@ ul {
     align-self: stretch;
     flex-shrink: 0;
     height: 151px;
-    position: relative;
+
     object-fit: cover;
 }
 
@@ -238,17 +172,17 @@ ul {
     justify-content: flex-start;
     align-self: stretch;
     flex: 1;
-    position: relative;
+
     overflow: hidden;
 }
 
 .trip-name {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
+
+
+
     font-size: 20px;
-    font-weight: 400;
-    position: relative;
+
+
 }
 
 .stars {
@@ -259,7 +193,7 @@ ul {
     justify-content: flex-start;
     flex-shrink: 0;
     width: 140px;
-    position: relative;
+
     overflow: hidden;
 }
 
@@ -267,7 +201,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -275,7 +209,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -283,7 +217,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -291,7 +225,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -299,7 +233,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -311,24 +245,24 @@ ul {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    position: relative;
+
     overflow: hidden;
 }
 
 .rp-xx-xxx {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
+
+
+
     font-size: 20px;
-    font-weight: 400;
-    position: relative;
+
+
 }
 
 .star6 {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -336,7 +270,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -344,7 +278,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -352,7 +286,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -360,7 +294,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -368,7 +302,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -376,7 +310,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -384,7 +318,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -392,7 +326,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -400,7 +334,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -408,7 +342,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -416,7 +350,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -424,7 +358,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -432,7 +366,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -440,7 +374,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -448,7 +382,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -456,7 +390,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -464,7 +398,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -472,7 +406,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -480,7 +414,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -488,7 +422,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -496,7 +430,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -504,7 +438,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -512,7 +446,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -520,7 +454,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -528,7 +462,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -536,7 +470,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -544,7 +478,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -552,7 +486,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -560,7 +494,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -568,7 +502,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -576,7 +510,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -584,7 +518,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -592,7 +526,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -600,7 +534,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -608,7 +542,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -616,7 +550,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -624,7 +558,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -632,7 +566,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -640,7 +574,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -648,7 +582,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -656,7 +590,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -664,7 +598,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -672,7 +606,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -680,7 +614,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -688,7 +622,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -696,7 +630,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -704,7 +638,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -712,7 +646,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -720,7 +654,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -728,7 +662,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -736,7 +670,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -744,7 +678,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -752,7 +686,7 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
 
@@ -760,6 +694,6 @@ ul {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    position: relative;
+
     overflow: visible;
 }
