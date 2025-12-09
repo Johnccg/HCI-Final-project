@@ -1,0 +1,339 @@
+/* === Guide profile page === */
+
+/* Page container */
+.guide-profile {
+    background: #ffffff;
+    padding: 24px 16px 40px 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.guide-profile-inner {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Card pattern */
+.guide-header-card,
+.guide-card {
+    background: #f7f7f7;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 20px 24px;
+    box-sizing: border-box;
+}
+
+/* Header layout */
+.guide-header {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.guide-avatar-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.guide-basic-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.guide-name-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.guide-name {
+    margin: 0;
+    font-size: 28px;
+}
+
+.guide-badge {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid #1c5c4c;
+}
+
+/* Rating pattern */
+.guide-rating-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.guide-rating-text {
+    font-size: 14px;
+}
+
+/* Tags (chips) */
+.guide-location {
+    margin: 0;
+    font-size: 15px;
+}
+
+.guide-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.guide-tag {
+    background: #d9d9d9;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 13px;
+}
+
+/* Meta info row (experience, trips, group size) */
+.guide-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 6px;
+}
+
+.guide-meta-item {
+    min-width: 150px;
+}
+
+.guide-meta-label {
+    margin: 0 0 2px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.guide-meta-value {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Buttons */
+.guide-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.guide-primary-btn,
+.guide-secondary-btn {
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-size: 14px;
+    border: none;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.guide-primary-btn {
+    background: #1c5c4c;
+    color: #ffffff;
+}
+
+.guide-secondary-btn {
+    background: #ffffff;
+    border: 1px solid #1c5c4c;
+}
+
+.guide-primary-btn:hover,
+.guide-secondary-btn:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Content layout */
+.guide-content {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.guide-column-main {
+    flex: 2;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.guide-column-side {
+    flex: 1.2;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Sections & typography */
+.guide-section h2 {
+    margin: 0 0 8px 0;
+}
+
+.guide-section p,
+.guide-section ul {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.guide-section ul {
+    padding-left: 18px;
+}
+
+/* Trails list */
+.guide-trails-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.guide-trail-card {
+    border-radius: 10px;
+    border: 1px solid #1e1e1e;
+    padding: 10px 12px;
+}
+
+.guide-trail-card-title {
+    margin: 0 0 2px 0;
+    font-size: 15px;
+}
+
+.guide-trail-meta {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .guide-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .guide-avatar-large {
+        width: 100px;
+        height: 100px;
+    }
+
+    .guide-profile {
+        padding: 16px 12px 32px 12px;
+    }
+}
+
+
+.theme-toggle {
+    margin-left: 12px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: none;
+    font-size: 12px;
+    background: #1c5c4c;
+    color: #ffffff;
+}
+
+.theme-toggle:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Bottom bar (hidden by default) */
+.bottom-bar {
+    display: none;
+}
+
+/* === Dark mode state for guide page === */
+
+/* Change only the top nav bar */
+body.guide-dark .topbar {
+    background: #000000;
+    border-bottom-color: #000000;
+}
+
+/* Make text in the nav readable on black */
+body.guide-dark .topbar a,
+body.guide-dark .topbar h1 {
+    color: #ffffff;
+}
+
+/* Show a black bar at the bottom of the viewport */
+body.guide-dark .bottom-bar {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 28px;
+    background: #000000;
+}
+
+/* Force the body background to change on dark mode */
+body.guide-dark {
+    background: #000000 !important;  /* or #111 if you want softer black */
+    color: #ffffff !important;
+}
+
+/* Make each content card dark too */
+body.guide-dark .guide-card,
+body.guide-dark .guide-header-card {
+    background: #1a1a1a !important;
+    border-color: #333 !important;
+}
+
+body.guide-dark .guide-profile {
+    background: #000000 !important;
+}
+
+/* Force the main page container to be dark */
+body.guide-dark .guide-profile {
+    background: #000000 !important;
+}
+
+/* Global text override for dark mode */
+body.guide-dark,
+body.guide-dark .guide-profile,
+body.guide-dark .guide-profile-inner,
+body.guide-dark .guide-section,
+body.guide-dark .guide-card,
+body.guide-dark .guide-header-card,
+body.guide-dark * {
+    color: #ffffff !important;
+}
+
+body.guide-dark h1,
+body.guide-dark h2,
+body.guide-dark h3,
+body.guide-dark p,
+body.guide-dark li,
+body.guide-dark span,
+body.guide-dark a {
+    color: #ffffff !important;
+}
+
+/* Dark mode tags fix */
+body.guide-dark .guide-tag {
+    background: #2a2a2a !important;
+    color: #cccccc !important;
+}
+
+/* Dark mode – soften the secondary button */
+body.guide-dark .guide-secondary-btn {
+    background: #1b1b1b !important;     /* soft dark background */
+    border-color: #2f2f2f !important;   /* subtle grey border */
+    color: #e0e0e0 !important;          /* dimmed white text */
+}

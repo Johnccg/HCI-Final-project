@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide profile - Next Level Adventure</title>
+
+    <link rel="stylesheet" href="./Home.css">
+    <link rel="stylesheet" href="./GuideProfile.css">
+    <!-- JS only used on this page -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- Topbar only for this page (Home.html stays untouched) -->
+    <div class="topbar">
+        <a href="Home.html">
+            <h1 class="next-level-adventure">Next Level Adventure</h1>
+        </a>
+        <nav>
+            <a href="Home.html">Explore</a>
+            <a href="#">Create</a>
+        </nav>
+        <img class="profile" src="./images/profile.png" alt="User profile" />
+
+        <!-- Dark mode button just for guide page -->
+        <button class="theme-toggle" id="themeToggle">Dark mode</button>
+    </div>
+
+    <section class="guide-profile">
+        <div class="guide-profile-inner">
+
+            <!-- Header card -->
+            <div class="guide-header-card">
+                <div class="guide-header">
+                    <img class="guide-avatar-large" src="./images/profile.png" alt="Guide photo" />
+
+                    <div class="guide-basic-info">
+                        <div class="guide-name-row">
+                            <h1 class="guide-name">Dimas Pratama</h1>
+                            <span class="guide-badge">Verified guide</span>
+                        </div>
+
+                        <div class="guide-rating-row">
+                            <div class="stars-container">
+                                <img class="star" src="./images/star.svg" alt="star" />
+                                <img class="star" src="./images/star.svg" alt="star" />
+                                <img class="star" src="./images/star.svg" alt="star" />
+                                <img class="star" src="./images/star.svg" alt="star" />
+                                <img class="star" src="./images/star.svg" alt="star" />
+                            </div>
+                            <span class="guide-rating-text">4.9 • 68 reviews</span>
+                        </div>
+
+                        <p class="guide-location">
+                            Based in Malang, East Java • Leads Semeru, Bromo & local day hikes
+                        </p>
+
+                        <div class="guide-tags">
+                            <span class="guide-tag">Beginner-friendly</span>
+                            <span class="guide-tag">Overnight trips</span>
+                            <span class="guide-tag">Local expert</span>
+                            <span class="guide-tag">Speaks English & Bahasa</span>
+                        </div>
+
+                        <div class="guide-meta-row">
+                            <div class="guide-meta-item">
+                                <p class="guide-meta-label">Experience</p>
+                                <p class="guide-meta-value">7+ years guiding</p>
+                            </div>
+                            <div class="guide-meta-item">
+                                <p class="guide-meta-label">Completed trips</p>
+                                <p class="guide-meta-value">120+ groups</p>
+                            </div>
+                            <div class="guide-meta-item">
+                                <p class="guide-meta-label">Max group size</p>
+                                <p class="guide-meta-value">Up to 8 hikers</p>
+                            </div>
+                        </div>
+
+                        <div class="guide-actions">
+                            <button class="guide-primary-btn">Contact guide</button>
+                            <button class="guide-secondary-btn">View available trips</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="guide-content">
+                <div class="guide-column-main">
+                    <div class="guide-section guide-card">
+                        <h2>About this guide</h2>
+                        <p>
+                            Dimas is a local mountain guide specialising in East Java peaks.
+                            He focuses on small, safe groups and helping first-time hikers feel
+                            confident on the trail. Expect a calm pace, clear explanations, and
+                            plenty of photo stops.
+                        </p>
+                    </div>
+
+                    <div class="guide-section guide-card">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Mountain Guide License – Indonesian Mountain Federation</li>
+                            <li>First Aid &amp; CPR Certified</li>
+                            <li>Wilderness safety &amp; navigation training</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section guide-card">
+                        <h2>What to expect on the trail</h2>
+                        <p>
+                            Before each hike, Dimas will brief you on the route, weather,
+                            and expected difficulty. He helps with pace-setting, hydration
+                            reminders, and basic hiking technique for steep or rocky sections.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="guide-column-side">
+                    <div class="guide-section guide-card">
+                        <h2>Featured trails</h2>
+                        <div class="guide-trails-list">
+                            <div class="guide-trail-card">
+                                <p class="guide-trail-card-title">Mount Semeru Sunrise Summit</p>
+                                <p class="guide-trail-meta">
+                                    2 days • Intermediate • Rp. 1.200.000 / hiker
+                                </p>
+                            </div>
+                            <div class="guide-trail-card">
+                                <p class="guide-trail-card-title">Bromo Crater &amp; Viewpoint Loop</p>
+                                <p class="guide-trail-meta">
+                                    1 day • Easy • Rp. 600.000 / hiker
+                                </p>
+                            </div>
+                            <div class="guide-trail-card">
+                                <p class="guide-trail-card-title">Tumpak Sewu Waterfall Trek</p>
+                                <p class="guide-trail-meta">
+                                    1 day • Moderate • Rp. 750.000 / hiker
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-section guide-card">
+                        <h2>Safety &amp; policies</h2>
+                        <ul>
+                            <li>Maximum 8 hikers per group</li>
+                            <li>Weather checked 24 hours before departure</li>
+                            <li>Full refund if trail is closed by authorities</li>
+                            <li>Required gear list shared after booking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Black bar that appears only in dark mode -->
+    <div class="bottom-bar"></div>
+</body>
+
+</html>
