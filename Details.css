@@ -46,7 +46,7 @@ body {
     height: 55px;
 }
 
-.next-level-adventure {
+.next-level-adventure>h1 {
     font-family: "Inter-ExtraBold", sans-serif;
     font-size: 20px;
     font-weight: 800;
