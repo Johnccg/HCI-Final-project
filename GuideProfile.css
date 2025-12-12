@@ -212,11 +212,16 @@ body.guide-dark {
 
 /* topbar visuals */
 body.guide-dark .topbar {
-    background: #000000;
-    border-bottom-color: #000000;
+    background: #9d9999;
+    border-bottom: 1px solid #b8b5b5;
 }
 
+
 /* ensure topbar text and links are readable */
+
+
+/* Make text in the nav readable on black */
+
 body.guide-dark .topbar a,
 body.guide-dark .topbar h1,
 body.guide-dark .topbar nav a {
@@ -298,4 +303,57 @@ body.guide-dark .theme-toggle {
     gap: 12px;   
 }
 
+
+
+/* Ensure topbar elements align nicely and the button/profile sit at the right */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* keep brand left, controls right */
+    padding: 12px 20px;
+    background: #ffffff;             /* light mode */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+/* push nav and brand to the left while keeping profile & toggle on the right */
+.topbar > a,
+.topbar > nav {
+    margin-right: auto;
+}
+
+/* profile image styling (same look as before but ensure placement) */
+.topbar .profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* keep the toggle visually consistent */
+.theme-toggle {
+    margin-left: 8px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: none;
+    font-size: 13px;
+    background: #1c5c4c;
+    color: #ffffff;
+}
+
+/* focus outline for keyboard users */
+.theme-toggle:focus,
+.topbar .profile:focus {
+    outline: 3px solid rgba(28,92,76,0.16);
+    outline-offset: 2px;
+}
+
+/* If you want the profile to appear just left of the button with a tiny gap */
+.topbar .profile-link {
+    display: inline-flex;
+    align-items: center;
+}
 
