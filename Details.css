@@ -1,0 +1,280 @@
+* {
+    color: #000000;
+    font-family: "Inter-Regular", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    background: #b8b8b8;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    height: 55px;
+}
+
+.next-level-adventure>h1 {
+    font-family: "Inter-ExtraBold", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.next-level-adventure:hover {
+    cursor: pointer;
+}
+
+nav {
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+}
+
+nav > a {
+    padding: 30px 25px;
+    font-size: 20px;
+}
+
+nav > a:hover {
+    background: #1c5c4c;
+    color: #ffffff;
+}
+
+.profile {
+    background: linear-gradient(to left, #d9d9d9, #d9d9d9);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.content {
+    background: #ffffff;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 1200px;
+}
+
+.details-nav {
+    padding: 10px 0 5px 0;
+    display: flex;
+    height: 66px;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+}
+
+.nav-selected {
+    border-color: #1c5c4c !important;
+    border-width: 0 0 3px 0 !important;
+    box-shadow: inset 0 4px 4px rgba(28, 92, 76, 0.25);
+}
+
+.nav-section {
+    border-style: solid;
+    border-color: #000;
+    border-width: 0 0 1px 0;
+    padding: 12px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex: 1;
+}
+
+.details-nav > a{
+    color: #000000;
+    font-size: 20px;
+}
+
+.details-nav > a:hover {
+    box-shadow: inset 0 4px 4px rgba(28, 92, 76, 0.25);
+}
+
+.overview {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.overview-images {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.thumbnail-big {
+    background: #d9d9d9;
+    width: 469px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 111px;
+    height: 380px;
+    overflow: auto;
+}
+
+.thumbnail {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.overview-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 280px;
+}
+
+.horizontal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-button {
+    background: #1c5c4c;
+    border-radius: 5px;
+    border: 0;
+    padding: 0 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.book-button:hover {
+    cursor: pointer;
+    background: #10352c;
+}
+
+.map {
+    width: 1000px;
+    height: 350px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.guides {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.guides-selected {
+    background-color: #b8b8b8;
+}
+
+.tour-guide {
+    padding: 0 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.profile-big {
+    background: #d9d9d9;
+    border-radius: 50%;
+    width: 157px;
+    height: 157px;
+    object-fit: cover;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.reviews {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+}
+
+.review-container {
+    padding: 0 20px;
+    display: flex;
+    gap: 10px;
+    width: 980px;
+}
+
+.profile-small {
+    background: #d9d9d9;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.review-info {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    margin: 0;
+}
+
+.review-info > h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.star {
+    width: 24px;
+    height: 24px;
+    overflow: visible;
+}
