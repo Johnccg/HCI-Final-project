@@ -1,7 +1,5 @@
 const detalisNav = document.querySelector('.details-nav');
-
-console.log(detalisNav)
-console.log(detalisNav.children)
+const guidesSelect = document.querySelector('.guides')
 
 for (let i = 0; i < detalisNav.children.length; i++) {
     const navSelected = detalisNav.children[i]
@@ -16,6 +14,15 @@ for (let i = 0; i < detalisNav.children.length; i++) {
     })
 }
 
-function setSelected(index) {
-    
+for (let i = 0; i < guidesSelect.children.length; i++) {
+    const guideSelected = guidesSelect.children[i]
+    guideSelected.addEventListener('click', () => {
+        for (let j = 0; j < guidesSelect.children.length; j++) {
+            if (guidesSelect.children[j] === guideSelected) {
+                guidesSelect.children[j].classList.add('guides-selected')
+            } else {
+                guidesSelect.children[j].classList.remove('guides-selected')
+            }
+        }
+    })
 }

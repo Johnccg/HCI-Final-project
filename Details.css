@@ -203,11 +203,24 @@ nav > a:hover {
     cursor: pointer;
 }
 
-.organizer {
-    padding: 0 200px;
+.guides {
+    flex-direction: column;
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.guides-selected {
+    background-color: #b8b8b8;
+}
+
+.tour-guide {
+    padding: 0 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .profile-big {
