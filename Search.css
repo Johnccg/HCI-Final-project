@@ -1,0 +1,276 @@
+* {
+    color: #000000;
+    font-family: "Inter-Regular", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-section {
+  background: #ffffff;
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  flex: 1;
+}
+
+.top-search {
+  background: #ffffff;
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 85px;
+  position: relative;
+  overflow: hidden;
+}
+
+.search-bar {
+  background: #d9d9d9;
+  border-radius: 24px;
+  padding: 6px 16px 6px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  
+  
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.search {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+
+.search-for-a-trip {
+  color: #7a7a7a;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+
+.frame-1 {
+  background: #ffffff;
+  padding: 0px 38px 0px 38px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-1 {
+  flex-shrink: 0;
+  width: 106px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+
+.filter-4 {
+  flex-shrink: 0;
+  width: 106px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+
+.filter-5 {
+  flex-shrink: 0;
+  width: 106px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+
+.filter-2 {
+  flex-shrink: 0;
+  width: 106px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+
+.filter-3 {
+  flex-shrink: 0;
+  width: 106px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+
+.trip-hi-fi {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px 0px 0px 0px;
+  padding: 0px 8px 0px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-search {
+  padding: 10px 5px 10px 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  background: linear-gradient(to left, #d9d9d9, #d9d9d9);
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 100px;
+  height: 83px;
+  position: relative;
+  object-fit: cover;
+}
+
+.left-search2 {
+  flex-shrink: 0;
+  width: 230px;
+  height: 77px;
+  position: relative;
+  overflow: hidden;
+}
+
+.trip-name {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  width: 100px;
+}
+
+.rectangle-12 {
+  background: #efefef;
+  width: 220px;
+  height: 44px;
+  position: absolute;
+  left: 3px;
+  top: 33px;
+}
+
+.dd-mm-yyyy {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 144px;
+  top: 8px;
+}
+
+.description {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 3px;
+  top: 33px;
+  width: 220px;
+  height: 35px;
+}
+
+.right-search {
+  padding: 3px 1px 3px 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  
+  
+  flex-shrink: 0;
+  width: 87px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rp-xx-xxx {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+
+.rectangle-16 {
+  background: #1c5c4c;
+  border-radius: 5px;
+  padding: 0px 12px 0px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 80px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-trip {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
