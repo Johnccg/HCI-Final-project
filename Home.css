@@ -3,20 +3,11 @@
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
     font-weight: 400;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: center;
 }
 
 h1 {
@@ -25,6 +16,25 @@ h1 {
 
 h2 {
     font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .topbar {
