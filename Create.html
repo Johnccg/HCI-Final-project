@@ -22,63 +22,72 @@
   </div>
   <section class="create-form">
     <h1>Create a new trip</h1>
-    <form>
+    <form id="trip-form">
       <div class="form-section">
         <div class="form-input">
-          <label>
+          <label for="name">
             <h1>Name</h1>
           </label>
           <div class="input-container">
             <img src="./images/text-size.png" class="input-icon">
-            <input type="text" class="input-field" placeholder="Trip name" />
+            <input type="text" class="input-field" placeholder="Trip name" name="name" required/>
           </div>
         </div>
         <div class="form-input">
-          <label>
+          <label for="date">
             <h1>Date</h1>
           </label>
           <div class="input-container">
             <img src="./images/calendar.png" class="input-icon">
-            <input type="date" class="input-field" />
+            <input type="date" class="input-field" name="date" required/>
           </div>
         </div>
         <div class="form-input">
-          <label>
+          <label for="price">
             <h1>Price</h1>
           </label>
           <div class="input-container">
             <p class="input-icon">Rp.</p>
-            <input type="number" class="input-field" placeholder="xx.xxx" />
+            <input type="number" min=0 class="input-field" placeholder="xx.xxx" name="price" required/>
+          </div>
+        </div>
+        <div class="form-input">
+          <label for="duration">
+            <h1>Duration (mins)</h1>
+          </label>
+          <div class="input-container">
+            <img src="./images/clock.png" class="input-icon">
+            <input type="number" min=0 class="input-field" placeholder="60" name="duration" required/>
           </div>
         </div>
       </div>
       <div class="form-section">
         <div class="form-input">
-          <label>
-            <h1>Name</h1>
+          <label for="description">
+            <h1>Description</h1>
           </label>
           <div class="input-container" id="textarea-container">
             <img src="./images/text-size.png" class="input-icon">
-            <textarea type="text" class="input-field" placeholder="On this trip..."></textarea>
+            <textarea type="text" class="input-field" placeholder="On this trip..." name="description" required></textarea>
           </div>
         </div>
         <div class="vertical-container">
           <div class="form-input">
-            <label>
+            <label for="start">
               <h1>Start Location</h1>
             </label>
             <div class="input-container">
               <img src="./images/maps-and-flags.png" class="input-icon">
-              <input type="text" class="input-field" placeholder="Start" />
+              <input type="text" class="input-field" placeholder="Start" name="start" required/>
             </div>
           </div>
           <div class="form-input">
-            <label>
+            <label for="end">
               <h1>End location</h1>
             </label>
             <div class="input-container">
               <img src="./images/maps-and-flags.png" class="input-icon">
-              <input type="text" class="input-field" placeholder="End" />
+              <input type="text" class="input-field" placeholder="End" name="end" required/>
             </div>
           </div>
         </div>
@@ -86,7 +95,7 @@
       <input type="submit" class="submit-button" value="Submit"/>
     </form>
   </section>
-
+  <script src="./Create.js"></script>
 </body>
 
 </html>
