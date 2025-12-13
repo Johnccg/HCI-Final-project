@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +8,85 @@
   <link rel="stylesheet" href="./Home.css">
   <title>Create Trip</title>
 </head>
+
 <body>
   <div class="topbar">
-        <a class="next-level-adventure" href="./Home.html">
-            <h1>Next Level Adventure</h1>
-        </a>
-        <nav>
-            <a href="./Search.html">Explore</a>
-            <a href="./Create.html">Create</a>
-        </nav>
-        <img class="profile" src="./images/profile.png" />
-    </div>
-  <div class="body">
-    <div class="create-a-new-trip">Create a new trip</div>
-    <div class="frame-23">
-      <div class="frame-17">
-        <div class="name">Name</div>
-        <div class="rectangle-37">
-          <div class="trip-name">Trip name</div>
-        </div>
-      </div>
-      <div class="frame-18">
-        <div class="date">Date</div>
-        <div class="rectangle-37">
-          <div class="dd-mm-yyyy">DD/MM//YYYY</div>
-        </div>
-      </div>
-      <div class="frame-19">
-        <div class="price">Price</div>
-        <div class="rectangle-37">
-          <div class="rp-xx-xxx">Rp. xx.xxx</div>
-        </div>
-      </div>
-    </div>
-    <div class="frame-25">
-      <div class="frame-20">
-        <div class="description">Description</div>
-        <div class="rectangle-372">
-          <div class="on-this-trip">On this trip ....</div>
-        </div>
-      </div>
-      <div class="frame-24">
-        <div class="frame-21">
-          <div class="start-location">Start location</div>
-          <div class="rectangle-37">
-            <div class="start">Start</div>
-          </div>
-        </div>
-        <div class="frame-22">
-          <div class="end-location">End location</div>
-          <div class="rectangle-37">
-            <div class="end">End</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="frame-26"></div>
+    <a class="next-level-adventure" href="./Home.html">
+      <h1>Next Level Adventure</h1>
+    </a>
+    <nav>
+      <a href="./Search.html">Explore</a>
+      <a href="./Create.html">Create</a>
+    </nav>
+    <img class="profile" src="./images/profile.png" />
   </div>
-  
+  <section class="create-form">
+    <h1>Create a new trip</h1>
+    <form>
+      <div class="form-section">
+        <div class="form-input">
+          <label>
+            <h1>Name</h1>
+          </label>
+          <div class="input-container">
+            <img src="./images/text-size.png" class="input-icon">
+            <input type="text" class="input-field" placeholder="Trip name" />
+          </div>
+        </div>
+        <div class="form-input">
+          <label>
+            <h1>Date</h1>
+          </label>
+          <div class="input-container">
+            <img src="./images/calendar.png" class="input-icon">
+            <input type="date" class="input-field" />
+          </div>
+        </div>
+        <div class="form-input">
+          <label>
+            <h1>Price</h1>
+          </label>
+          <div class="input-container">
+            <p class="input-icon">Rp.</p>
+            <input type="number" class="input-field" placeholder="xx.xxx" />
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <div class="form-input">
+          <label>
+            <h1>Name</h1>
+          </label>
+          <div class="input-container" id="textarea-container">
+            <img src="./images/text-size.png" class="input-icon">
+            <textarea type="text" class="input-field" placeholder="On this trip..."></textarea>
+          </div>
+        </div>
+        <div class="vertical-container">
+          <div class="form-input">
+            <label>
+              <h1>Start Location</h1>
+            </label>
+            <div class="input-container">
+              <img src="./images/maps-and-flags.png" class="input-icon">
+              <input type="text" class="input-field" placeholder="Start" />
+            </div>
+          </div>
+          <div class="form-input">
+            <label>
+              <h1>End location</h1>
+            </label>
+            <div class="input-container">
+              <img src="./images/maps-and-flags.png" class="input-icon">
+              <input type="text" class="input-field" placeholder="End" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <input type="submit" class="submit-button" value="Submit"/>
+    </form>
+  </section>
+
 </body>
+
 </html>
