@@ -3,10 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  text-decoration: none;
 }
 
 body {
   background: #f2f2f2;
+}
+
+.container {
   padding: 20px;
 }
 
@@ -22,7 +26,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -41,14 +45,16 @@ label {
   margin-bottom: 4px;
 }
 
-input, select {
+input,
+select {
   padding: 10px;
   margin-bottom: 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
 }
 
-.book-trip input,select {
+.book-trip input,
+select {
   width: 60%;
 }
 
@@ -84,7 +90,8 @@ table {
   border-collapse: collapse;
 }
 
-table th, table td {
+table th,
+table td {
   padding: 8px;
   border-bottom: 1px solid #ddd;
   text-align: left;
@@ -119,15 +126,16 @@ table th, table td {
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+
 .payment-methods li {
   display: flex;
-  align-items: flex-end;   
+  align-items: flex-end;
   margin-bottom: 10px;
 }
 
 .payment-methods li input[type="radio"] {
   margin-right: 10px;
-  margin-top: 6px;         
+  margin-top: 6px;
 }
 
 .payment-management {
@@ -217,7 +225,8 @@ table th, table td {
     font-size: 14px;
   }
 
-  th, td {
+  th,
+  td {
     padding: 8px;
     white-space: nowrap;
   }
@@ -226,4 +235,100 @@ table th, table td {
     font-size: 18px;
     text-align: right;
   }
+}
+
+.topbar {
+  background: #b8b8b8;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  height: 55px;
+}
+
+.profile-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.profile-btn:focus {
+  outline: none;
+}
+
+.profile-btn .profile {
+  display: block;
+}
+
+/* Your original block */
+.next-level-adventure {
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* Incoming main-branch rule */
+.next-level-adventure>h1 {
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.next-level-adventure:hover {
+  background: #7d7d7d;
+  cursor: pointer;
+}
+
+nav {
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+
+nav>a {
+  padding: 30px 25px;
+  font-size: 20px;
+  color: #000000;
+}
+
+nav>a:hover {
+  background: #1c5c4c;
+  color: #ffffff;
+}
+
+.profile {
+  background: linear-gradient(to left, #d9d9d9, #d9d9d9);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.theme-toggle {
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: none;
+    font-size: 14px;
+    background: #1c5c4c;
+    color: white;
+    margin-right: 12px;
+}
+
+.theme-toggle:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Right-side container so profile stays on far right */
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }

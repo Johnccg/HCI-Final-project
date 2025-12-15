@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Itinerary UI</title>
   <link rel="stylesheet" href="itinerary.css" />
-  <link rel="stylesheet" href="home.css" />
 </head>
+
 <body>
+  <div class="topbar-page">
+    <a class="next-level-adventure" href="./index.html">
+      <h1>Next Level Adventure</h1>
+    </a>
 
+    <nav>
+      <a href="./Search.html">Explore</a>
+      <a href="./Create.html">Create</a>
+      <a href="./itinerary.html">Itinerary</a>
+    </nav>
 
-  <div class="topbar">
-        <a class="next-level-adventure" href="./index.html">
-            <h1>Next Level Adventure</h1>
-        </a>
+    <div class="topbar-right">
+      <!-- Light / Dark mode toggle FIRST -->
+      <button class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
+        Light mode
+      </button>
 
-        <nav>
-            <a href="./Search.html">Explore</a>
-            <a href="./Create.html">Create</a>
-            <a href="./itinerary.html">Itinerary</a>
-        </nav>
-
-        <div class="topbar-right">
-            <!-- Light / Dark mode toggle FIRST -->
-            <button class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
-                Light mode
-            </button>
-
-            <!-- Profile button SECOND -->
-            <button id="profileBtn" class="profile-btn" aria-haspopup="dialog" aria-controls="authModal"
-                title="Sign in or sign up">
-                <img class="profile" src="./images/profile.png" alt="Profile" />
-            </button>
-        </div>
+      <!-- Profile button SECOND -->
+      <button id="profileBtn" class="profile-btn" aria-haspopup="dialog" aria-controls="authModal"
+        title="Sign in or sign up">
+        <img class="profile" src="./images/profile.png" alt="Profile" />
+      </button>
     </div>
-    
-  <div class="phone">
-    <a href="./booking.html">
-    <label>booking</label>
-  </a>
-
-    <div class="topbar"> Itinerary</div>
-
-    <div class="search">
-      <input type="text" placeholder="Search Itineraries" />
-    </div>
-    <div class="itinerary-list">
-    <div class="card">🧳 Paris<br><small>July 15–20</small></div>
-    <div class="card">🧳 New York<br><small>Aug 5–10</small></div>
-    <div class="card">🧳 Bali<br><small>Sep 10–18</small></div>
-    </div>
-
-    <button class="create-btn">＋ Create Itinerary</button>
   </div>
 
-  <div class="phone">
-    <div class="topbar">
-      <span class="Left arrow"></span>
-      <span>Create Itinerary</span>
-      <span class="checkmark"></span>
+  <div class="container">
+    <div class="phone">
+      <div class="topbar"> Itinerary</div>
+
+      <div class="search">
+        <input type="text" placeholder="Search Itineraries" />
+      </div>
+      <div class="itinerary-list">
+        <div class="card">🧳 Paris<br><small>July 15–20</small></div>
+        <div class="card">🧳 New York<br><small>Aug 5–10</small></div>
+        <div class="card">🧳 Bali<br><small>Sep 10–18</small></div>
+      </div>
+
+      <button class="create-btn">＋ Create Itinerary</button>
     </div>
 
-    <div class="form">
-      <label>Itinerary Name</label>
-      <input class="itinerary-name" type="text" />
+    <div class="phone">
+      <div class="topbar">
+        <span class="Left arrow"></span>
+        <span>Create Itinerary</span>
+        <span class="checkmark"></span>
+      </div>
 
-   <label>Destination</label>
-     <select class="destination">
-       <option>Select destination</option>
-       <option>Paris</option>
-       <option>New York</option>
-       <option>Bali</option>
-     </select>
+      <div class="form">
+        <label>Itinerary Name</label>
+        <input class="itinerary-name" type="text" />
 
-      <label>Start Date</label>
-      <input class="start-date" type="date" />
+        <label>Destination</label>
+        <select class="destination">
+          <option>Select destination</option>
+          <option>Paris</option>
+          <option>New York</option>
+          <option>Bali</option>
+        </select>
 
-      <label>End Date</label>
-      <input class="end-date" type="date" />
+        <label>Start Date</label>
+        <input class="start-date" type="date" />
 
-      <label>Travel Notes</label>
-      <input class="activity" type="activity" placeholder="+ Add Activity" />
+        <label>End Date</label>
+        <input class="end-date" type="date" />
 
-      <button class="save-btn">Save Itinerary</button>
+        <label>Travel Notes</label>
+        <input class="activity" type="activity" placeholder="+ Add Activity" />
+
+        <button class="save-btn">Save Itinerary</button>
+      </div>
     </div>
   </div>
 
   <script src="itinerary.js"></script>
 </body>
+
 </html>
