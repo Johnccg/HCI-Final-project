@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Booking Dashboard</title>
+  <link rel="stylesheet" href="booking.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  
+  <div class="topbar">
+        <a class="next-level-adventure" href="./index.html">
+            <h1>Next Level Adventure</h1>
+        </a>
+
+        <nav>
+            <a href="./Search.html">Explore</a>
+            <a href="./Create.html">Create</a>
+            <a href="./itinerary.html">Itinerary</a>
+        </nav>
+
+        <div class="topbar-right">
+            <!-- Light / Dark mode toggle FIRST -->
+            <button class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
+                Light mode
+            </button>
+
+            <!-- Profile button SECOND -->
+            <button id="profileBtn" class="profile-btn" aria-haspopup="dialog" aria-controls="authModal"
+                title="Sign in or sign up">
+                <img class="profile" src="./images/profile.png" alt="Profile" />
+            </button>
+        </div>
+    </div>
+
+  <div class="container">
+    <div class="card book-trip">
+      <h3>Book Trip</h3>
+      <label>Destination</label>
+      <select id="destination">
+        <option>Select destination</option>
+        <option>Barcelona Getaway</option>
+        <option>Spain Highlights</option>
+        <option>Spanish Countryside</option>
+      </select>
+
+      <label>Date</label>
+      <input type="text" placeholder="Enter Date" />
+
+      <button class="btn">Search</button>
+    </div>
+
+    <div class="card package">
+      <h3>Choose Package</h3>
+      <div class="packages">
+        <div class="pkg-item">
+          <img src="https://thumbs.dreamstime.com/b/arc-de-triomf-memorial-arch-barcelona-was-built-as-gateway-to-fair-which-held-parc-la-ciutadella-monument-classical-305566427.jpg?w=576" />
+          <p><strong>Barcelona Getaway</strong><br>5 days<br>$1,200</p>
+          <button class="select-btn" data-name="Barcelona Getaway" data-price="1,200">Select</button>
+        </div>
+        <div class="pkg-item">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.4q1Ye3mkQv644GdE1magcQHaE8?pid=Api&P=0&h=220" />
+          <p><strong>Spain Highlights</strong><br>7 days<br>$1,200</p>
+          <button class="select-btn" data-name="Spain Highlights" data-price="1,200">Select</button>
+        </div>
+        <div class="pkg-item">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.qlXV1XNZ3N3oeLZK3WkaAAHaE-?pid=Api&P=0&h=220" />
+          <p><strong>Spanish Countryside</strong><br>4 days<br>$1,200</p>
+          <button class="select-btn" data-name="Spansih Countryside" data-price="1,200">Select</button>
+        </div>
+      </div>
+
+    <div class="card payment">
+      <h3>Payment Method</h3>
+      <label><input class="input-payment" type="radio" name="payment" value="Credit card"> Credit card</label>
+      <label><input class="input-payment" type="radio" name="payment" value="Paypal"> PayPal</label>
+      <label><input class="input-payment" type="radio" name="payment" value="Bank transfer"> Bank transfer</label>
+      <div class="payment-management">
+      
+<h3 for="customerName">Customer Name</h3>
+<input 
+  type="text" 
+  id="customerName" 
+  placeholder="Enter customer name"
+  class="input-field"
+>
+
+<button id="confirmPaymentBtn" class="btn">Confirm Payement</button>
+  
+  <h3>Payment Management</h3>
+  <table class="payment-table">
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Package & Method</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody id="paymentList">
+    </tbody>
+  </table>
+
+  <div class="total-payment">
+    <span>Total Payment</span>
+    <strong id="totalPayment">$0</strong>
+  </div>
+</div>
+
+  <script src="booking.js"></script>
+</body>
+</html>
