@@ -1,5 +1,6 @@
 const buttonLeft = document.querySelectorAll('#left-button');
 const buttonRight = document.querySelectorAll('#right-button');
+const searchBar = document.querySelector(".search")
 
 console.log(buttonRight);
 
@@ -21,3 +22,10 @@ for (let i = 0; i < buttonLeft.length; i++) {
         container.scrollLeft -= 1000;
     };
 }
+
+searchBar.addEventListener('keydown', (event) =>{
+    if (event.key == 'Enter'){
+        event.preventDefault()
+        window.location.replace("./Search.html")
+    }
+})
